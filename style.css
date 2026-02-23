@@ -1,0 +1,74 @@
+body {
+font-family: system-ui;
+margin: 20px;
+background: #f6f8fb;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.dashboard {
+display: flex;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.card {
+background: white;
+padding: 15px;
+border-radius: 12px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.card.alerta {
+background: #ffeaea;
+}
+
+input {
+padding: 10px;
+border-radius: 8px;
+border: 1px solid #ddd;
+}
+
+button {
+padding: 10px 14px;
+border: none;
+border-radius: 8px;
+background: #5b8def;
+color: white;
+cursor: pointer;
+}
+
+.acoes {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+
+.produto {
+background: white;
+padding: 15px;
+border-radius: 12px;
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.baixo {
+background: #fff0f0;
+border-left: 6px solid red;
+}
+
+.historico-item {
+background: white;
+padding: 8px;
+border-radius: 8px;
+margin-bottom: 5px;
+font-size: 13px;
+}
