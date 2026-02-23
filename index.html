@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estoque Clínica</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Estoque da Clínica</h1>
+
+<input type="text" id="busca" placeholder="Buscar produto">
+
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+<span>Total de produtos</span>
+<h2 id="totalProdutos"></h2>
+</div>
+
+<div class="card alerta">
+<span>Estoque baixo</span>
+<h2 id="estoqueBaixo"></h2>
+</div>
+
+</section>
+
+<section class="acoes">
+
+<button onclick="modoConferencia()">Modo conferência</button>
+<button onclick="filtrarBaixo()">Mostrar estoque baixo</button>
+<button onclick="gerarPDF()">Gerar PDF</button>
+<button onclick="exportarLista()">Exportar lista</button>
+
+</section>
+
+<section>
+
+<h2>Produtos</h2>
+<div id="listaProdutos"></div>
+
+</section>
+
+<section class="add">
+
+<h2>Adicionar produto</h2>
+
+<input id="nomeProduto" placeholder="Nome do produto">
+<input id="quantidadeProduto" type="number" placeholder="Quantidade">
+<button onclick="adicionarProduto()">Adicionar</button>
+
+</section>
+
+<section>
+
+<h2>Histórico</h2>
+<div id="historico"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
